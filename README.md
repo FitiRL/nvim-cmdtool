@@ -22,6 +22,17 @@ https://github.com/user-attachments/assets/389976a8-5337-4c6d-8d25-64fb0c56f10e
 Plug 'FitiRL/nvim-cmdtool'
 ```
 
+### Lua initialization
+
+Configure the plugin in your init `.lua` file:
+
+```lua
+require('nvim-cmdtool').setup({
+  commands_file = vim.fn.stdpath('config') .. '/cmdtool.json',
+  prompt_title = 'cmdtool',
+})
+```
+
 ## Requirements
 
 - telescope
